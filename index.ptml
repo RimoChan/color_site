@@ -1,0 +1,20 @@
+html:
+    head:
+        meta charset="UTF-8";
+        link rel="stylesheet" href="https://synthetic.librian.it/synthetic.css";
+        script src='./dist/bundle.js':
+        title:
+            色圖網站
+    body.synth:
+        div#全:
+            h1:
+                色圖網站
+            div#所有顏色:
+                div.色块 v-for="顏色 in 顏色表" v-bind:style='"background-color:"+顏色.值+";"':
+                    ruby:
+                        {{顏色.名字}}
+                        <rt>{{顏色.讀法}}</rt>
+                    div.號碼: 
+                        {{顏色.值}}
+                    div.號碼: 
+                        {{顏色.rgb[0]}}, {{顏色.rgb[1]}}, {{顏色.rgb[2]}}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+h1 {
+  text-align: center; }
+
+#全 {
+  padding: 10px; }
+
+#所有顏色 {
+  display: flex;
+  flex-wrap: wrap; }
+
+.色块 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+  margin: 10px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s; }
+  .色块 .號碼, .色块 rt {
+    opacity: 0;
+    transition: opacity 0.3s; }
+  .色块:hover {
+    transform: scale(1.5);
+    transition: transform 0.1s; }
+    .色块:hover .號碼, .色块:hover rt {
+      opacity: 1; }
