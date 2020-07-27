@@ -1,7 +1,7 @@
 html:
     head:
         meta charset="UTF-8";
-        link rel="stylesheet" href="https://synthetic.librian.it/synthetic.css";
+        link rel="stylesheet" href="https://synthetic.librian.net/synthetic.css";
         script src='./dist/bundle.js':
         title:
             色圖網站
